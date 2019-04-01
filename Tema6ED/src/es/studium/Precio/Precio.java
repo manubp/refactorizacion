@@ -4,12 +4,11 @@ public class Precio {
 
 	public double calcularPrecio(int unidades, double precioUnitario1) {
 		
-		return (unidades*precioUnitario1) * 1.21;
+		double precioSinIVA = unidades * precioUnitario1;
+		double precioConIVA = precioSinIVA * 1.21;
+		return precioConIVA;
 		
-		
-		
-	
-		
+				
 	}
 	
 	
